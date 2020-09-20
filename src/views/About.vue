@@ -4,7 +4,7 @@
   <div v-if="tayo === null"><h1>loading</h1></div>
   <div v-for="(tayo, index) in tayo" :key="index">
   <b-card
-    :title="tayo.title"
+    title="farhan ammar"
     img-src="https://picsum.photos/600/300/?image=25"
     img-alt="Image"
     img-top

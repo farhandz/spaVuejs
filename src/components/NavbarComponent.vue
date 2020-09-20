@@ -9,6 +9,7 @@
       <b-navbar-nav>
         <b-nav-item href="#" to="/about">about</b-nav-item>
         <b-nav-item href="#" to="/home">home</b-nav-item>
+        <b-nav-item href="#" to="/login">login</b-nav-item>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
