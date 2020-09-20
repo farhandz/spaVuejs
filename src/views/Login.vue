@@ -38,7 +38,8 @@ export default {
   methods: {
     asu () {
       this.login(this.form).then(response => {
-        alert('sukseslogin')
+        alert(response)
+        window.location = '/about'
       }).catch(err => {
         alert(err)
       })

@@ -1,6 +1,9 @@
 <template>
 <div class="container tayo">
 <div class="row">
+  <div>
+    <button @click="onLogout" class="btn btn-warning">logout</button>
+  </div>
   <div v-if="tayo === null"><h1>loading</h1></div>
   <div v-for="(tayo, index) in tayo" :key="index">
   <b-card
@@ -24,11 +27,22 @@
 </template>
 <script>
 import axios from 'axios'
+import { mapActions } from 'vuex'
 export default {
   data () {
     return {
       name: 'farhan ammar ',
       tayo: null
+    }
+  },
+  methods: {
+    ...mapActions({
+      actionLog: 'logout'
+    }),
+    onLogout () {
+      this.actionLog().then(() => {
+        window.location = '/login'
+      })
     }
   },
   mounted () {
